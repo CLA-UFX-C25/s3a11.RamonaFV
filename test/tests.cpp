@@ -20,7 +20,7 @@ TEST_CASE("Ex1", "[Probando constructor por default]")
 
 TEST_CASE("Ex2", "[Probando constructor con parametros iniciales]")
 {
-    Alumno a("A178940", "LUZ LOPEZ CISNEROS", 19, "IC");
+    Alumno a("A01234567", "RAMONA FUENTES VALDEZ", 18, "ITC");
     SECTION("Verificando sus atributos iniciales")
     {
         REQUIRE(a.getMatricula()=="A178940");
@@ -32,7 +32,7 @@ TEST_CASE("Ex2", "[Probando constructor con parametros iniciales]")
 
 TEST_CASE("Ex3", "[Probando setters]")
 {
-    Alumno a("A178940", "LUZ LOPEZ CISNEROS", 19, "IC");
+    Alumno a("A01234567", "RAMONA FUENTES VALDEZ", 18, "ITC");
     SECTION("Verificando cambios en los atributos")
     {
         a.setMatricula("A178936");
@@ -50,7 +50,7 @@ TEST_CASE("Ex3", "[Probando setters]")
 
 TEST_CASE("Ex4", "[Probando Imprimir alumno]")
 {
-    Alumno a("A178940", "LUZ LOPEZ CISNEROS", 19, "IC");
+    Alumno a("A01234567", "RAMONA FUENTES VALDEZ", 18, "ITC");
     SECTION("Mostrando en consola los datos del alumno")
     {
         a.imprimeAlumno();
@@ -61,7 +61,7 @@ TEST_CASE("Ex4", "[Probando Imprimir alumno]")
 
 TEST_CASE("Ex5", "[Probando el cumpleaños del alumno]")
 {
-    Alumno a("A178940", "LUZ LOPEZ CISNEROS", 19, "IC");
+    Alumno a("A01234567", "RAMONA FUENTES VALDEZ", 18, "ITC");
     a.cumpleAnios();
     SECTION("Festejando al alumno por su cumpleaños")
     {
